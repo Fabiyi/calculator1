@@ -1,0 +1,58 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+    font-weight: normal;
+}   
+body{
+   padding: 0;
+   margin: 0;
+   background: lightgreen;
+}
+.calculatorBody{
+   display: grid;
+   justify-content: center;
+   align-content: center;
+   min-height: 100vh;
+   grid-template-columns: repeat(4,100px);
+   grid-template-rows: minmax(120px,auto);
+   grid-template-rows: repeat(5,100px) ;
+}
+.calculatorBody > button{
+   cursor: pointer;
+   font-size: 19px;
+   border: 2px solid white;
+   outline: none;
+   width: 97px;
+   height: 97px;
+   /* gap: 2px; */
+   background-color: rgba(255, 255, 255, .75);     
+}
+.calculatorBody > button:hover{
+   background-color: rgba(255, 255, 255, .9); 
+}
+.calculatorBody > .span-two{
+   grid-column:span 2;
+   border: 1px solid red;
+
+}
+.calculatorScreen{
+   grid-column: 1/-1;
+   background-color: rgba(0, 0, 0, .55);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.calculatorScreenbefore{
+   color: rgba(255, 255, 255, .75);
+   font-size: 16px;
+
+}
+.calculatorScreenafter{
+   color: white;
+   font-size:35px;
+   
+}
