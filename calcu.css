@@ -32,8 +32,8 @@ body{
 }
 .calculatorBody > .span-two{
    grid-column:span 2;
-   border: 1px solid red;
-
+   width: 197px;
+   border: 2px solid rgb(83, 10, 253);
 }
 .calculatorScreen{
    grid-column: 1/-1;
